@@ -1,0 +1,76 @@
+{
+  "title": "DynDNS Manager",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Anbieter-Auswahl",
+        "description": "Wählen Sie Ihren Anbieter aus.",
+        "data": {
+          "provider": "Anbieter"
+        }
+      },
+      "provider": {
+        "title": "Anbieter-Konfiguration",
+        "description": "Tragen Sie hier Ihre Zugangsdaten ein.",
+        "data": {
+          "duckdns_token": "DuckDNS Token",
+          "cf_api_token": "Cloudflare API-Token",
+          "strato_user": "STRATO Benutzername",
+          "strato_pass": "STRATO Passwort",
+          "noip_user": "NoIP Benutzername",
+          "noip_pass": "NoIP Passwort",
+          "allinkl_user": "ALL-INKL Benutzername",
+          "allinkl_pass": "ALL-INKL Passwort"
+        }
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Geben Sie die Domains kommasepariert ein (z. B.: example.com, home.example.com).",
+        "data": {
+          "domains": "Domains (kommasepariert)"
+        }
+      },
+      "webaccess": {
+        "title": "Webzugriff",
+        "description": "Tragen Sie hier Zugangsdaten für den Webzugriff ein.",
+        "data": {
+          "web_user": "Webzugriff Benutzername",
+          "web_pass": "Webzugriff Passwort"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "Anbieter-Konfiguration",
+        "description": "Passen Sie bei Bedarf Ihre Zugangsdaten an.",
+        "data": {
+          "duckdns_token": "DuckDNS Token",
+          "cf_api_token": "Cloudflare API-Token",
+          "strato_user": "STRATO Benutzername",
+          "strato_pass": "STRATO Passwort",
+          "noip_user": "NoIP Benutzername",
+          "noip_pass": "NoIP Passwort",
+          "allinkl_user": "ALL-INKL Benutzername",
+          "allinkl_pass": "ALL-INKL Passwort"
+        }
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Domains kommasepariert bearbeiten.",
+        "data": {
+          "domains": "Domains (kommasepariert)"
+        }
+      },
+      "webaccess": {
+        "title": "Webzugriff",
+        "description": "Benutzername/Passwort für die URL-Aktualisierung festlegen.",
+        "data": {
+          "web_user": "Webzugriff Benutzername",
+          "web_pass": "Webzugriff Passwort"
+        }
+      }
+    }
+  }
+}
