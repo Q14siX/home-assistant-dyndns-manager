@@ -13,14 +13,16 @@
 
 ## Deutsch
 
-**Aktuelle Version:** `v20250813.1030`
+**Aktuelle Version:** `v20250813.1700`
 
 **DynDNS Manager** ist eine benutzerfreundliche [Home Assistant](https://www.home-assistant.io/) Integration, mit der Sie Ihre DynDNS-Provider direkt aus Home Assistant heraus verwalten und aktualisieren können.  
 Die Integration unterstützt aktuell folgende Provider:
 
-- **DuckDNS**
-- **Strato**
+- **AllInkl**
 - **Cloudflare**
+- **DuckDNS**
+- **NoIP**
+- **Strato**
 
 💡 Zusätzlich kann eine **Fritz!Box** so konfiguriert werden, dass sie ein Update an den DynDNS Manager sendet.
 
@@ -141,14 +143,16 @@ Dieses Projekt steht unter der **MIT-Lizenz** – siehe [LICENSE](LICENSE) für 
 
 ## English
 
-**Current Version:** `v20250813.1030`
+**Current Version:** `v20250813.1700`
 
 **DynDNS Manager** is a user-friendly [Home Assistant](https://www.home-assistant.io/) integration that allows you to manage and update your DynDNS providers directly from Home Assistant.  
 Currently supported providers:
 
-- **DuckDNS**
-- **Strato**
+- **AllInkl**
 - **Cloudflare**
+- **DuckDNS**
+- **NoIP**
+- **Strato**
 
 💡 Additionally, a **Fritz!Box** can be configured to send updates to the DynDNS Manager.
 
