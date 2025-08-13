@@ -77,8 +77,16 @@ class DynDNSConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             self._domains = user_input.get(CONF_DOMAINS, [])
             return await self.async_step_webaccess()
 
+        options = sorted(self._domains or [], key=str.lower)
         schema = vol.Schema({
-            vol.Required(CONF_DOMAINS): SelectSelector(SelectSelectorConfig(options=self._domains or [], multiple=True, custom_value=True, mode=SelectSelectorMode.DROPDOWN)),
+            vol.Required(CONF_DOMAINS, default=options): SelectSelector(
+                SelectSelectorConfig(
+                    options=options,
+                    multiple=True,
+                    custom_value=True,
+                    mode=SelectSelectorMode.DROPDOWN
+                ),
+            ),
         })
         return self.async_show_form(step_id="domains", data_schema=schema)
 
@@ -163,8 +171,16 @@ class DynDNSOptionsFlow(config_entries.OptionsFlow):
             return await self.async_step_webaccess()
 
         existing = merged.get(CONF_DOMAINS, [])
+        options = sorted(existing, key=str.lower)
         schema = vol.Schema({
-            vol.Required(CONF_DOMAINS, default=existing): SelectSelector(SelectSelectorConfig(options=existing, multiple=True, custom_value=True, mode=SelectSelectorMode.DROPDOWN)),
+            vol.Required(CONF_DOMAINS, default=existing): SelectSelector(
+                SelectSelectorConfig(
+                    options=options,
+                    multiple=True,
+                    custom_value=True,
+                    mode=SelectSelectorMode.DROPDOWN
+                ),
+            ),
         })
         return self.async_show_form(step_id="domains", data_schema=schema)
 
