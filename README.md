@@ -73,7 +73,7 @@ Die Integration bietet:
 1. Gehen Sie in Home Assistant zu **Einstellungen → Geräte & Dienste**.
 2. Klicken Sie auf **Integration hinzufügen**.
 3. Suchen Sie nach **DynDNS Manager**.
-4. Wählen Sie den gewünschten Provider (DuckDNS, Strato oder Cloudflare) aus.
+4. Wählen Sie den gewünschten Provider (DuckDNS, Strato, Cloudflare, NoIP oder ALL-INKL) aus.
 5. Geben Sie die erforderlichen Zugangsdaten / API-Keys ein.
 6. Fertig! Ihre DynDNS-Einträge werden nun automatisch aktualisiert.
 
@@ -85,9 +85,11 @@ Die Integration bietet:
 
 | Provider    | Benötigte Daten |
 |-------------|----------------|
-| DuckDNS     | API Token, Domain |
-| Strato      | Benutzername, Passwort, Domain |
+| ALL-INKL    | Benutzername, Passwort, Domain |
 | Cloudflare  | API Token, Zone ID, Domain |
+| DuckDNS     | API Token, Domain |
+| NoIP        | Benutzername, Passwort, Domain |
+| Strato      | Benutzername, Passwort, Domain |
 
 Alle Eingaben erfolgen bequem über den **Config Flow** in der Home Assistant Oberfläche – keine `configuration.yaml`-Änderungen nötig.
 
@@ -203,7 +205,7 @@ Features:
 1. Go to **Settings → Devices & Services** in Home Assistant.
 2. Click **Add Integration**.
 3. Search for **DynDNS Manager**.
-4. Select the desired provider (DuckDNS, Strato, or Cloudflare).
+4. Select the desired provider (DuckDNS, Strato, Cloudflare, NoIP, or ALL-INKL).
 5. Enter the required credentials / API keys.
 6. Done! Your DynDNS entries will now be updated automatically.
 
@@ -215,9 +217,11 @@ Features:
 
 | Provider    | Required Data |
 |-------------|---------------|
-| DuckDNS     | API Token, Domain |
-| Strato      | Username, Password, Domain |
+| ALL-INKL    | Username, Password, Domain |
 | Cloudflare  | API Token, Zone ID, Domain |
+| DuckDNS     | API Token, Domain |
+| NoIP        | Username, Password, Domain |
+| Strato      | Username, Password, Domain |
 
 All input is done conveniently via the **Config Flow** in the Home Assistant UI – no `configuration.yaml` changes needed.
 
