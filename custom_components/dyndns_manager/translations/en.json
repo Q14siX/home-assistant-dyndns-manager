@@ -1,0 +1,72 @@
+{
+  "title": "DynDNS Manager",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Provider Selection",
+        "description": "Select your provider.",
+        "data": {
+          "provider": "Provider"
+        }
+      },
+      "provider": {
+        "title": "Provider Configuration",
+        "description": "Enter your login credentials here.",
+        "data": {
+          "duckdns_token": "DuckDNS Token",
+          "cf_api_token": "Cloudflare API Token",
+          "strato_user": "STRATO Username",
+          "strato_pass": "STRATO Password",
+          "allinkl_user": "ALL-INKL Username",
+          "allinkl_pass": "ALL-INKL Password",
+          "noip_user": "No-IP Username",
+          "noip_pass": "No-IP Password"
+        }
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Use chips to enter one or more domains. Press Enter to add; click × to remove.",
+        "data": {
+          "domains": "Domains"
+        }
+      },
+      "webaccess": {
+        "title": "Web Access",
+        "description": "Enter the login credentials for web access here.",
+        "data": {
+          "web_user": "Web Access Username",
+          "web_pass": "Web Access Password"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "Provider Configuration",
+        "description": "Adjust your login credentials if needed.",
+        "data": {
+          "duckdns_token": "DuckDNS Token",
+          "cf_api_token": "Cloudflare API Token",
+          "strato_user": "STRATO Username",
+          "strato_pass": "STRATO Password"
+        }
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Edit your domains using chips (Enter to add, × to remove).",
+        "data": {
+          "domains": "Domains"
+        }
+      },
+      "webaccess": {
+        "title": "Web Access",
+        "description": "Set username/password for URL update.",
+        "data": {
+          "web_user": "Web Access Username",
+          "web_pass": "Web Access Password"
+        }
+      }
+    }
+  }
+}
