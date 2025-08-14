@@ -13,7 +13,7 @@
 
 ## Deutsch
 
-**Aktuelle Version:** `v20250813.2000`
+**Aktuelle Version:** `v20250814.1400`
 
 **DynDNS Manager** ist eine benutzerfreundliche [Home Assistant](https://www.home-assistant.io/) Integration, mit der Sie Ihre DynDNS-Provider direkt aus Home Assistant heraus verwalten und aktualisieren können.  
 Die Integration unterstützt aktuell folgende Provider:
@@ -102,13 +102,13 @@ Die Integration kann Updates auch von einer Fritz!Box empfangen.
 Dazu in der Fritz!Box unter **Internet → Freigaben → Dynamic DNS** folgende URL eintragen:
 
 ```
-http://[HA_HOST]:[HA_PORT]/dyndns-manager/?username=[WEB_USERNAME]&password=[WEB_PASSWORD]&ipv4=[IPV4]&ipv6=[IPV6]
+http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&ipv4=<ipaddr>&ipv6=<ip6addr>
 ```
 
-- `[HA_HOST]` → Hostname oder IP-Adresse Ihres Home Assistant
-- `[HA_PORT]` → Port von Home Assistant (Standard: 8123)
-- `[WEB_USERNAME]` / `[WEB_PASSWORD]` → Zugangsdaten für den Webzugriff (siehe Einrichtungsassistenten)
-- `[IPV4]` / `[IPV6]` → Platzhalter für die IPv4 und/oder IPv6
+- `<ha_host>` → Hostname oder IP-Adresse Ihres Home Assistant
+- `<ha_port>` → Port von Home Assistant (Standard: 8123)
+- `<username>` / `<pass>` → Zugangsdaten für den Webzugriff (siehe Einrichtungsassistenten)
+- `<ipaddr>` / `<ip6addr>` → Platzhalter für die IPv4 und/oder IPv6
 
 ---
 
@@ -145,7 +145,7 @@ Dieses Projekt steht unter der **MIT-Lizenz** – siehe [LICENSE](LICENSE) für 
 
 ## English
 
-**Current Version:** `v20250813.2000`
+**Current Version:** `v20250814.1400`
 
 **DynDNS Manager** is a user-friendly [Home Assistant](https://www.home-assistant.io/) integration that allows you to manage and update your DynDNS providers directly from Home Assistant.  
 Currently supported providers:
@@ -234,13 +234,13 @@ The integration can also receive updates from a Fritz!Box.
 In the Fritz!Box, go to **Internet → Permit Access → Dynamic DNS** and enter the following URL:
 
 ```
-http://[HA_HOST]:[HA_PORT]/dyndns-manager/?username=[WEB_USERNAME]&password=[WEB_PASSWORD]&ipv4=[IPV4]&ipv6=[IPV6]
+http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&ipv4=<ipaddr>&ipv6=<ip6addr>
 ```
 
-- `[HA_HOST]` → Hostname or IP address of your Home Assistant
-- `[HA_PORT]` → Home Assistant port (default: 8123)
-- `[WEB_USERNAME]` / `[WEB_PASSWORD]` → Web access credentials (see setup wizard)
-- `[IPV4]` / `[IPV6]` → Placeholders for IPv4 and/or IPv6
+- `<ha_host>` → Hostname or IP address of your Home Assistant
+- `<ha_port>` → Home Assistant port (default: 8123)
+- `<username>` / `<pass>` → Web access credentials (see setup wizard)
+- `<ipaddr>` / `<ip6addr>` → Placeholders for IPv4 and/or IPv6
 
 ---
 
