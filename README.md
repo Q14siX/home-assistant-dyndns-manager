@@ -13,7 +13,7 @@
 
 ## Deutsch
 
-**Aktuelle Version:** `v20250814.1400`
+**Aktuelle Version:** `v20250813.2000`
 
 **DynDNS Manager** ist eine benutzerfreundliche [Home Assistant](https://www.home-assistant.io/) Integration, mit der Sie Ihre DynDNS-Provider direkt aus Home Assistant heraus verwalten und aktualisieren können.  
 Die Integration unterstützt aktuell folgende Provider:
@@ -109,6 +109,7 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 - `<ha_port>` → Port von Home Assistant (Standard: 8123)
 - `<username>` / `<pass>` → Zugangsdaten für den Webzugriff (siehe Einrichtungsassistenten)
 - `<ipaddr>` / `<ip6addr>` → Platzhalter für die IPv4 und/oder IPv6
+💡 **Hinweis:** In der Fritz!Box muss in der URL nur `<ha_host>` und `<ha_port>` angepasst werden. Alle anderen Werte (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) werden von der Fritz!Box automatisch ersetzt, wenn Sie das Eingabeformular ausfüllen.
 
 ---
 
@@ -145,7 +146,7 @@ Dieses Projekt steht unter der **MIT-Lizenz** – siehe [LICENSE](LICENSE) für 
 
 ## English
 
-**Current Version:** `v20250814.1400`
+**Current Version:** `v20250813.2000`
 
 **DynDNS Manager** is a user-friendly [Home Assistant](https://www.home-assistant.io/) integration that allows you to manage and update your DynDNS providers directly from Home Assistant.  
 Currently supported providers:
@@ -241,6 +242,7 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 - `<ha_port>` → Home Assistant port (default: 8123)
 - `<username>` / `<pass>` → Web access credentials (see setup wizard)
 - `<ipaddr>` / `<ip6addr>` → Placeholders for IPv4 and/or IPv6
+💡 **Note:** In the Fritz!Box, only `<ha_host>` and `<ha_port>` need to be changed in the URL. All other values (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) are automatically replaced by the Fritz!Box when you fill in the input form.
 
 ---
 
