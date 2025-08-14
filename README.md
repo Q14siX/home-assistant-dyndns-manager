@@ -109,6 +109,7 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 - `<ha_port>` → Port von Home Assistant (Standard: 8123)
 - `<username>` / `<pass>` → Zugangsdaten für den Webzugriff (siehe Einrichtungsassistenten)
 - `<ipaddr>` / `<ip6addr>` → Platzhalter für die IPv4 und/oder IPv6
+
 💡 **Hinweis:** In der Fritz!Box muss in der URL nur `<ha_host>` und `<ha_port>` angepasst werden. Alle anderen Werte (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) werden von der Fritz!Box automatisch ersetzt, wenn Sie das Eingabeformular ausfüllen.
 
 ---
@@ -242,6 +243,7 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 - `<ha_port>` → Home Assistant port (default: 8123)
 - `<username>` / `<pass>` → Web access credentials (see setup wizard)
 - `<ipaddr>` / `<ip6addr>` → Placeholders for IPv4 and/or IPv6
+
 💡 **Note:** In the Fritz!Box, only `<ha_host>` and `<ha_port>` need to be changed in the URL. All other values (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) are automatically replaced by the Fritz!Box when you fill in the input form.
 
 ---
