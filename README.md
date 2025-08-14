@@ -112,6 +112,8 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 
 💡 **Hinweis:** In der Fritz!Box muss in der URL nur `<ha_host>` und `<ha_port>` angepasst werden. Alle anderen Werte (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) werden von der Fritz!Box automatisch ersetzt, wenn Sie das Eingabeformular ausfüllen.
 
+![FRITZ!BOX Eingabemaske](images/FRITZ!Box.png)
+
 ---
 
 ### 🔘 Funktionen in Home Assistant
@@ -245,6 +247,8 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 - `<ipaddr>` / `<ip6addr>` → Placeholders for IPv4 and/or IPv6
 
 💡 **Note:** In the Fritz!Box, only `<ha_host>` and `<ha_port>` need to be changed in the URL. All other values (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) are automatically replaced by the Fritz!Box when you fill in the input form.
+
+![FRITZ!BOX Eingabemaske](images/FRITZ!Box.png)
 
 ---
 
