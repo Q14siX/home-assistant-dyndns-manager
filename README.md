@@ -9,11 +9,50 @@
 ## 📌 Sprachen / Languages
 - [Deutsch](#deutsch)
 - [English](#english)
+- [Afrikaans]
+- [Arabic]
+- [Bulgarian]
+- [Catalan]
+- [Czech]
+- [Danish]
+- [Greek]
+- [Spanish]
+- [Estonian]
+- [Finnish]
+- [French]
+- [Hebrew]
+- [Hindi]
+- [Croatian]
+- [Hungarian]
+- [Indonesian]
+- [Icelandic]
+- [Italian]
+- [Japanese]
+- [Georgian]
+- [Korean]
+- [Lithuanian]
+- [Latvian]
+- [Norwegian Bokmål]
+- [Dutch]
+- [Polish]
+- [Portuguese (Brazil)]
+- [Portuguese (Portugal)]
+- [Romanian]
+- [Russian]
+- [Slovak]
+- [Slovenian]
+- [Serbian]
+- [Swedish]
+- [Thai]
+- [Turkish]
+- [Ukrainian]
+- [Urdu]
+- [Vietnamese]
+- [Chinese (Simplified)]
+- [Chinese (Traditional)]
 ---
 
 ## Deutsch
-
-**Aktuelle Version:** `v20250814.1415`
 
 **DynDNS Manager** ist eine benutzerfreundliche [Home Assistant](https://www.home-assistant.io/) Integration, mit der Sie Ihre DynDNS-Provider direkt aus Home Assistant heraus verwalten und aktualisieren können.  
 Die Integration unterstützt aktuell folgende Provider:
@@ -148,8 +187,6 @@ Dieses Projekt steht unter der **MIT-Lizenz** – siehe [LICENSE](LICENSE) für 
 ---
 
 ## English
-
-**Current Version:** `v20250814.1415`
 
 **DynDNS Manager** is a user-friendly [Home Assistant](https://www.home-assistant.io/) integration that allows you to manage and update your DynDNS providers directly from Home Assistant.  
 Currently supported providers:
