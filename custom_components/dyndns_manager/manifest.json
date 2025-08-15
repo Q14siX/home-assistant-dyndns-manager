@@ -1,7 +1,7 @@
 {
   "domain": "dyndns_manager",
   "name": "DynDNS Manager",
-  "version": "20250815.1245",
+  "version": "20250815.1318",
   "documentation": "https://github.com/Q14siX/home-assistant-dyndns-manager",
   "issue_tracker": "https://github.com/Q14siX/home-assistant-dyndns-manager/issues",
   "iot_class": "cloud_push",
