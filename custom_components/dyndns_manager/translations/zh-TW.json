@@ -1,0 +1,212 @@
+{
+  "title": "DynDNS 管理器",
+  "config": {
+    "step": {
+      "user": {
+        "title": "選擇服務提供商",
+        "description": "請選擇您的服務提供商。",
+        "data": {
+          "provider": "服務提供商"
+        }
+      },
+      "provider": {
+        "title": "服務提供商設定",
+        "description": "請在此輸入您的登入資訊。",
+        "data": {
+          "duckdns_token": "DuckDNS 權杖",
+          "cf_api_token": "Cloudflare API 權杖",
+          "strato_user": "STRATO 使用者名稱",
+          "strato_pass": "STRATO DynDNS 密碼",
+          "allinkl_user": "ALL-INKL DynDNS 使用者名稱",
+          "allinkl_pass": "ALL-INKL DynDNS 密碼",
+          "noip_user": "No-IP 使用者名稱",
+          "noip_pass": "No-IP 密碼"
+        }
+      },
+      "domains": {
+        "title": "網域",
+        "description": "請輸入一個或多個網域。",
+        "data": {
+          "domains": "網域",
+          "domain": "網域"
+        },
+        "data_description": {
+          "domains": "使用標籤編輯網域（按 Enter 新增，按 × 刪除）。",
+          "domain": "請輸入網域。"
+        }
+      },
+      "domains_single": {
+        "title": "網域",
+        "description": "請輸入網域。",
+        "data": {
+          "domain": "網域"
+        },
+        "data_description": {
+          "domain": "請輸入網域。"
+        }
+      },
+      "webaccess": {
+        "title": "網頁存取",
+        "description": "請在此輸入網頁存取的登入資訊。",
+        "data": {
+          "web_user": "網頁存取使用者名稱",
+          "web_pass": "網頁存取密碼"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "服務提供商設定",
+        "description": "如有需要，請調整您的登入資訊。",
+        "data": {
+          "duckdns_token": "DuckDNS 權杖",
+          "cf_api_token": "Cloudflare API 權杖",
+          "strato_user": "STRATO 使用者名稱",
+          "strato_pass": "STRATO 密碼",
+          "allinkl_user": "ALL-INKL DynDNS 使用者名稱",
+          "allinkl_pass": "ALL-INKL DynDNS 密碼",
+          "noip_user": "No-IP 使用者名稱",
+          "noip_pass": "No-IP 密碼"
+        }
+      },
+      "domains": {
+        "title": "網域",
+        "description": "請調整網域。",
+        "data": {
+          "domains": "網域",
+          "domain": "網域"
+        },
+        "data_description": {
+          "domains": "使用標籤編輯網域（按 Enter 新增，按 × 刪除）。",
+          "domain": "請輸入網域。"
+        }
+      },
+      "domains_single": {
+        "title": "網域",
+        "description": "請調整該網域。",
+        "data": {
+          "domain": "網域"
+        },
+        "data_description": {
+          "domain": "請輸入網域。"
+        }
+      },
+      "webaccess": {
+        "title": "網頁存取",
+        "description": "設定用於 URL 更新的使用者名稱/密碼。",
+        "data": {
+          "web_user": "網頁存取使用者名稱",
+          "web_pass": "網頁存取密碼"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "domain_status": {
+        "name": "網域狀態",
+        "state": {
+          "unknown": "未知",
+          "unavailable": "不可用",
+          "good": "已更新",
+          "nochg": "無變更",
+          "badauth": "驗證失敗",
+          "nohost": "未知主機",
+          "notfqdn": "不是 FQDN",
+          "numhost": "主機過多",
+          "abuse": "已回報濫用",
+          "911": "服務提供商錯誤"
+        },
+        "state_attributes": {
+          "ipv4": {
+            "name": "IPv4 位址",
+            "state": {
+              "unknown": "未知",
+              "unavailable": "不可用"
+            }
+          },
+          "ipv6": {
+            "name": "IPv6 位址",
+            "state": {
+              "unknown": "未知",
+              "unavailable": "不可用"
+            }
+          },
+          "last_update": {
+            "name": "最後更新",
+            "state": {
+              "unknown": "未知",
+              "unavailable": "不可用"
+            }
+          },
+          "last_response": {
+            "name": "最後回應",
+            "state": {
+              "unknown": "未知",
+              "unavailable": "不可用",
+              "nochg": "無變更",
+              "good": "已更新",
+              "badauth": "驗證失敗",
+              "nohost": "未知主機",
+              "notfqdn": "不是 FQDN",
+              "numhost": "主機過多",
+              "abuse": "已回報濫用",
+              "911": "服務提供商錯誤"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "update_all_domains": {
+        "name": "更新所有網域"
+      }
+    }
+  },
+  "services": {
+    "call_update": {
+      "name": "執行 DynDNS 更新",
+      "description": "呼叫 DynDNS 管理器的更新 URL。若欄位為空，將自動偵測外部位址。",
+      "fields": {
+        "ha_host": {
+          "name": "Home Assistant 主機",
+          "description": "可選。預設為目前的 Home Assistant 主機名稱。"
+        },
+        "ha_port": {
+          "name": "Home Assistant 連接埠",
+          "description": "可選。預設為目前的連接埠（通常為 8123）。"
+        },
+        "web_username": {
+          "name": "網頁使用者名稱",
+          "description": "網頁存取的登入憑證。若僅存在一筆記錄，將自動使用該記錄。"
+        },
+        "web_password": {
+          "name": "網頁密碼",
+          "description": "網頁存取的登入憑證。若僅存在一筆記錄，將自動使用該記錄。"
+        },
+        "use_ipv4": {
+          "name": "使用 IPv4",
+          "description": "啟用以一併傳送 IPv4。若啟用且欄位為空，將自動偵測外部 IPv4。"
+        },
+        "ipv4": {
+          "name": "IPv4 位址",
+          "description": "可選。僅在啟用「使用 IPv4」時使用。留空則自動偵測外部 IPv4。"
+        },
+        "use_ipv6": {
+          "name": "使用 IPv6",
+          "description": "啟用以一併傳送 IPv6。若啟用且欄位為空，將自動偵測外部 IPv6。"
+        },
+        "ipv6": {
+          "name": "IPv6 位址",
+          "description": "可選。僅在啟用「使用 IPv6」時使用。留空則自動偵測外部 IPv6。"
+        },
+        "timeout": {
+          "name": "逾時",
+          "description": "HTTP 請求的逾時時間（秒）。"
+        }
+      }
+    }
+  }
+}

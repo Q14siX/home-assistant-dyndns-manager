@@ -1,0 +1,212 @@
+{
+  "title": "DynDNS Yöneticisi",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sağlayıcı Seçimi",
+        "description": "Sağlayıcınızı seçin.",
+        "data": {
+          "provider": "Sağlayıcı"
+        }
+      },
+      "provider": {
+        "title": "Sağlayıcı Yapılandırması",
+        "description": "Buraya giriş bilgilerinizi girin.",
+        "data": {
+          "duckdns_token": "DuckDNS Jetonu",
+          "cf_api_token": "Cloudflare API Jetonu",
+          "strato_user": "STRATO Kullanıcı Adı",
+          "strato_pass": "STRATO DynDNS Parolası",
+          "allinkl_user": "ALL-INKL DynDNS Kullanıcı Adı",
+          "allinkl_pass": "ALL-INKL DynDNS Parolası",
+          "noip_user": "No-IP Kullanıcı Adı",
+          "noip_pass": "No-IP Parolası"
+        }
+      },
+      "domains": {
+        "title": "Alan Adları",
+        "description": "Bir veya daha fazla alan adı girin.",
+        "data": {
+          "domains": "Alan Adları",
+          "domain": "Alan Adı"
+        },
+        "data_description": {
+          "domains": "Alan adlarını etiketlerle düzenleyin (Enter ile ekle, × ile sil).",
+          "domain": "Alan adını girin."
+        }
+      },
+      "domains_single": {
+        "title": "Alan Adı",
+        "description": "Alan adını girin.",
+        "data": {
+          "domain": "Alan Adı"
+        },
+        "data_description": {
+          "domain": "Alan adını girin."
+        }
+      },
+      "webaccess": {
+        "title": "Web Erişimi",
+        "description": "Buraya web erişim bilgilerinizi girin.",
+        "data": {
+          "web_user": "Web Erişimi Kullanıcı Adı",
+          "web_pass": "Web Erişimi Parolası"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "Sağlayıcı Yapılandırması",
+        "description": "Gerekirse giriş bilgilerinizi düzenleyin.",
+        "data": {
+          "duckdns_token": "DuckDNS Jetonu",
+          "cf_api_token": "Cloudflare API Jetonu",
+          "strato_user": "STRATO Kullanıcı Adı",
+          "strato_pass": "STRATO Parolası",
+          "allinkl_user": "ALL-INKL DynDNS Kullanıcı Adı",
+          "allinkl_pass": "ALL-INKL DynDNS Parolası",
+          "noip_user": "No-IP Kullanıcı Adı",
+          "noip_pass": "No-IP Parolası"
+        }
+      },
+      "domains": {
+        "title": "Alan Adları",
+        "description": "Alan adlarını düzenleyin.",
+        "data": {
+          "domains": "Alan Adları",
+          "domain": "Alan Adı"
+        },
+        "data_description": {
+          "domains": "Alan adlarını etiketlerle düzenleyin (Enter ile ekle, × ile sil).",
+          "domain": "Alan adını girin."
+        }
+      },
+      "domains_single": {
+        "title": "Alan Adı",
+        "description": "Alan adını düzenleyin.",
+        "data": {
+          "domain": "Alan Adı"
+        },
+        "data_description": {
+          "domain": "Alan adını girin."
+        }
+      },
+      "webaccess": {
+        "title": "Web Erişimi",
+        "description": "URL güncellemesi için kullanıcı adı/parola ayarlayın.",
+        "data": {
+          "web_user": "Web Erişimi Kullanıcı Adı",
+          "web_pass": "Web Erişimi Parolası"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "domain_status": {
+        "name": "Alan Adı Durumu",
+        "state": {
+          "unknown": "Bilinmiyor",
+          "unavailable": "Kullanılamıyor",
+          "good": "Güncellendi",
+          "nochg": "Değişiklik Yok",
+          "badauth": "Kimlik doğrulama başarısız",
+          "nohost": "Bilinmeyen ana bilgisayar",
+          "notfqdn": "FQDN değil",
+          "numhost": "Çok fazla ana bilgisayar",
+          "abuse": "Kötüye kullanım bildirildi",
+          "911": "Sağlayıcı Hatası"
+        },
+        "state_attributes": {
+          "ipv4": {
+            "name": "IPv4 Adresi",
+            "state": {
+              "unknown": "Bilinmiyor",
+              "unavailable": "Kullanılamıyor"
+            }
+          },
+          "ipv6": {
+            "name": "IPv6 Adresi",
+            "state": {
+              "unknown": "Bilinmiyor",
+              "unavailable": "Kullanılamıyor"
+            }
+          },
+          "last_update": {
+            "name": "Son Güncelleme",
+            "state": {
+              "unknown": "Bilinmiyor",
+              "unavailable": "Kullanılamıyor"
+            }
+          },
+          "last_response": {
+            "name": "Son Yanıt",
+            "state": {
+              "unknown": "Bilinmiyor",
+              "unavailable": "Kullanılamıyor",
+              "nochg": "Değişiklik Yok",
+              "good": "Güncellendi",
+              "badauth": "Kimlik doğrulama başarısız",
+              "nohost": "Bilinmeyen ana bilgisayar",
+              "notfqdn": "FQDN değil",
+              "numhost": "Çok fazla ana bilgisayar",
+              "abuse": "Kötüye kullanım bildirildi",
+              "911": "Sağlayıcı Hatası"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "update_all_domains": {
+        "name": "Tüm alan adlarını güncelle"
+      }
+    }
+  },
+  "services": {
+    "call_update": {
+      "name": "DynDNS Güncellemesini Çalıştır",
+      "description": "DynDNS yöneticisinin güncelleme URL'sini çağırır. IP boşsa dış adres otomatik olarak algılanır.",
+      "fields": {
+        "ha_host": {
+          "name": "Home Assistant Sunucusu",
+          "description": "İsteğe bağlıdır. Varsayılan olarak mevcut Home Assistant ana bilgisayar adı kullanılır."
+        },
+        "ha_port": {
+          "name": "Home Assistant Bağlantı Noktası",
+          "description": "İsteğe bağlıdır. Varsayılan olarak mevcut bağlantı noktası (genellikle 8123) kullanılır."
+        },
+        "web_username": {
+          "name": "Web Kullanıcı Adı",
+          "description": "Web erişim bilgileri. Yalnızca bir kayıt varsa otomatik olarak kullanılır."
+        },
+        "web_password": {
+          "name": "Web Parolası",
+          "description": "Web erişim bilgileri. Yalnızca bir kayıt varsa otomatik olarak kullanılır."
+        },
+        "use_ipv4": {
+          "name": "IPv4 Kullan",
+          "description": "IPv4 göndermek için etkinleştirin. Etkin ve boşsa, dış IPv4 otomatik olarak algılanır."
+        },
+        "ipv4": {
+          "name": "IPv4 Adresi",
+          "description": "İsteğe bağlıdır. Yalnızca 'IPv4 Kullan' etkinse kullanılır. Boş bırakılırsa dış IPv4 otomatik olarak algılanır."
+        },
+        "use_ipv6": {
+          "name": "IPv6 Kullan",
+          "description": "IPv6 göndermek için etkinleştirin. Etkin ve boşsa, dış IPv6 otomatik olarak algılanır."
+        },
+        "ipv6": {
+          "name": "IPv6 Adresi",
+          "description": "İsteğe bağlıdır. Yalnızca 'IPv6 Kullan' etkinse kullanılır. Boş bırakılırsa dış IPv6 otomatik olarak algılanır."
+        },
+        "timeout": {
+          "name": "Zaman Aşımı",
+          "description": "HTTP isteği zaman aşımı süresi (saniye)."
+        }
+      }
+    }
+  }
+}
