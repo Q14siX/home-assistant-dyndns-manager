@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/github/v/release/Q14siX/home-assistant-dyndns-manager)](https://github.com/Q14siX/home-assistant-dyndns-manager/releases)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-![Languages](https://img.shields.io/badge/languages-43-blue.svg)
+![Languages](https://img.shields.io/badge/languages-2-blue.svg)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 ![Downloads](https://img.shields.io/github/downloads/Q14siX/home-assistant-dyndns-manager/total)
 
