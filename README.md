@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/github/v/release/Q14siX/home-assistant-dyndns-manager)](https://github.com/Q14siX/home-assistant-dyndns-manager/releases)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Languages](https://img.shields.io/badge/languages-43-blue.svg)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 ![Downloads](https://img.shields.io/github/downloads/Q14siX/home-assistant-dyndns-manager/total)
 
@@ -9,47 +10,47 @@
 ## 📌 Sprachen / Languages
 - [Deutsch](#deutsch)
 - [English](#english)
-- [Afrikaans]
-- [Arabic]
-- [Bulgarian]
-- [Catalan]
-- [Czech]
-- [Danish]
-- [Greek]
-- [Spanish]
-- [Estonian]
-- [Finnish]
-- [French]
-- [Hebrew]
-- [Hindi]
-- [Croatian]
-- [Hungarian]
-- [Indonesian]
-- [Icelandic]
-- [Italian]
-- [Japanese]
-- [Georgian]
-- [Korean]
-- [Lithuanian]
-- [Latvian]
-- [Norwegian Bokmål]
-- [Dutch]
-- [Polish]
-- [Portuguese (Brazil)]
-- [Portuguese (Portugal)]
-- [Romanian]
-- [Russian]
-- [Slovak]
-- [Slovenian]
-- [Serbian]
-- [Swedish]
-- [Thai]
-- [Turkish]
-- [Ukrainian]
-- [Urdu]
-- [Vietnamese]
-- [Chinese (Simplified)]
-- [Chinese (Traditional)]
+- Afrikaans
+- Arabic
+- Bulgarian
+- Catalan
+- Czech
+- Danish
+- Greek
+- Spanish
+- Estonian
+- Finnish
+- French
+- Hebrew
+- Hindi
+- Croatian
+- Hungarian
+- Indonesian
+- Icelandic
+- Italian
+- Japanese
+- Georgian
+- Korean
+- Lithuanian
+- Latvian
+- Norwegian Bokmål
+- Dutch
+- Polish
+- Portuguese (Brazil)
+- Portuguese (Portugal)
+- Romanian
+- Russian
+- Slovak
+- Slovenian
+- Serbian
+- Swedish
+- Thai
+- Turkish
+- Ukrainian
+- Urdu
+- Vietnamese
+- Chinese (Simplified)
+- Chinese (Traditional)
 ---
 
 ## Deutsch
@@ -70,6 +71,7 @@ Die Integration bietet:
 - Einfacher Konfigurationsdialog über die Home Assistant Benutzeroberfläche (Config Flow)
 - Unterstützung mehrerer Provider gleichzeitig
 - Direkte manuelle Aktualisierung über Home Assistant Buttons
+- Direkter Aufruf eines DynDNS-Updates per Home Assistant Service (für Automatisierungen und Skripte)
 
 ---
 
@@ -151,7 +153,7 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 
 💡 **Hinweis:** In der Fritz!Box muss in der URL nur `<ha_host>` und `<ha_port>` angepasst werden. Alle anderen Werte (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) werden von der Fritz!Box automatisch ersetzt, wenn Sie das Eingabeformular ausfüllen.
 
-![FRITZ!BOX Eingabemaske](images/FRITZ!Box.png)
+![FRITZ!BOX Eingabemaske](https://raw.githubusercontent.com/Q14siX/home-assistant-dyndns-manager/master/images/FRITZ!Box.png)
 
 ---
 
@@ -159,6 +161,7 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 
 - **Sensoren** → zeigen den aktuellen Status und die IP-Adresse an
 - **Buttons** → ermöglichen eine manuelle Aktualisierung der IP
+- **Service** → ermöglicht das direkte Ausführen eines DynDNS-Updates aus Automatisierungen oder Skripten
 
 ---
 
@@ -204,6 +207,7 @@ Features:
 - Easy configuration dialog through the Home Assistant UI (Config Flow)
 - Support for multiple providers simultaneously
 - Direct manual update via Home Assistant buttons
+- Direct execution of a DynDNS update via Home Assistant service (for automations and scripts)
 
 ---
 
@@ -285,7 +289,7 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 
 💡 **Note:** In the Fritz!Box, only `<ha_host>` and `<ha_port>` need to be changed in the URL. All other values (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) are automatically replaced by the Fritz!Box when you fill in the input form.
 
-![FRITZ!BOX Eingabemaske](images/FRITZ!Box.png)
+![FRITZ!BOX Eingabemaske](https://raw.githubusercontent.com/Q14siX/home-assistant-dyndns-manager/master/images/FRITZ!Box.png)
 
 ---
 
@@ -293,6 +297,7 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 
 - **Sensors** → show the current status and IP address
 - **Buttons** → allow manual IP update
+- **Service** → allows direct execution of a DynDNS update from automations or scripts
 
 ---
 
@@ -321,3 +326,4 @@ This project is licensed under the **MIT License** – see [LICENSE](LICENSE) fo
 ---
 
 💡 *DynDNS Manager – easy management of your dynamic DNS records directly in Home Assistant.*
+   
