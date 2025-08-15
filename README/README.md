@@ -1,0 +1,30 @@
+# DynDNS Manager
+
+[![Version](https://img.shields.io/github/v/release/Q14siX/home-assistant-dyndns-manager)](https://github.com/Q14siX/home-assistant-dyndns-manager/releases)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Languages](https://img.shields.io/badge/languages-20-blue.svg)
+![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
+![Downloads](https://img.shields.io/github/downloads/Q14siX/home-assistant-dyndns-manager/total)
+
+---
+## 📌 Sprachen / Languages
+- [Deutsch (de)](https://raw.githubusercontent.com/Q14siX/home-assistant-dyndns-manager/main/README/README_DE.md)
+- [English (en)](https://raw.githubusercontent.com/Q14siX/home-assistant-dyndns-manager/main/README/README_EN.md)
+- Brazilian Portuguese (pt-BR)
+- Chinese (Simplified, zh-CN)
+- Chinese (Traditional, zh-TW)
+- Czech (cs)
+- Danish (da)
+- Dutch (nl)
+- Finnish (fi)
+- French (fr)
+- Hungarian (hu)
+- Italian (it)
+- Japanese (ja)
+- Norwegian (Bokmål, nb)
+- Polish (pl)
+- Portuguese (pt)
+- Russian (ru)
+- Spanish (es)
+- Swedish (sv)
+- Turkish (tr)
