@@ -8,26 +8,26 @@
 
 ---
 ## 📌 Sprachen / Languages
-- [Deutsch (de)](#deutsch)
-- [English (en)](#english)
+- Deutsch (de) [Projektbeschreibung](#deutsch)
+- English (en) [Project description](#english)
 - Brazilian Portuguese (pt-BR)
-- Chinese (Traditional, zh-TW)
 - Chinese (Simplified, zh-CN)
+- Chinese (Traditional, zh-TW)
+- Czech (cs)
 - Danish (da)
+- Dutch (nl)
 - Finnish (fi)
 - French (fr)
+- Hungarian (hu)
 - Italian (it)
 - Japanese (ja)
-- Dutch (nl)
 - Norwegian (Bokmål, nb)
 - Polish (pl)
 - Portuguese (pt)
 - Russian (ru)
-- Swedish (sv)
 - Spanish (es)
-- Czech (cs)
+- Swedish (sv)
 - Turkish (tr)
-- Hungarian (hu)
 ---
 
 ## Deutsch
