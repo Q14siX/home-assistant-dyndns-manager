@@ -8,8 +8,8 @@
 
 ---
 ## 📌 Sprachen / Languages
-- Deutsch (de) [Projektbeschreibung](#deutsch)
-- English (en) [Project description](#english)
+- [Deutsch (de)](#deutsch)
+- [English (en)](#english)
 - Brazilian Portuguese (pt-BR)
 - Chinese (Simplified, zh-CN)
 - Chinese (Traditional, zh-TW)
