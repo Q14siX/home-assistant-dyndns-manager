@@ -8,8 +8,8 @@
 
 ---
 ## 📌 Sprachen / Languages
-- [Deutsch (de)](https://raw.githubusercontent.com/Q14siX/home-assistant-dyndns-manager/main/README/README_DE.md)
-- [English (en)](https://raw.githubusercontent.com/Q14siX/home-assistant-dyndns-manager/main/README/README_EN.md)
+- [Deutsch (de)](https://github.com/Q14siX/home-assistant-dyndns-manager/blob/main/README/README_DE.md)
+- [English (en)](https://github.com/Q14siX/home-assistant-dyndns-manager/blob/main/README/README_EN.md)
 - Brazilian Portuguese (pt-BR)
 - Chinese (Simplified, zh-CN)
 - Chinese (Traditional, zh-TW)
