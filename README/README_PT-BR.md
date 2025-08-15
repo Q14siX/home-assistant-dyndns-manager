@@ -30,7 +30,7 @@
 - Turco (tr)
 ---
 
-## Português Brasileiro
+## Portugues Brasileiro
 
 **DynDNS Manager** é uma integração amigável do [Home Assistant](https://www.home-assistant.io/) que permite gerenciar e atualizar seus provedores DynDNS diretamente a partir do Home Assistant.  
 Atualmente, a integração suporta os seguintes provedores:
