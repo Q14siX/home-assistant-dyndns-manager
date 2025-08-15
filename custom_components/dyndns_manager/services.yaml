@@ -1,0 +1,43 @@
+dyndns_manager:
+  name: DynDNS Update
+  description: "Trigger an update for DynDNS domains."
+  fields:
+    ha_host:
+      name: Home Assistant Host
+      description: "Hostname or IP address of your Home Assistant instance. Defaults to this instance."
+      example: "homeassistant.local"
+      required: false
+      selector:
+        text:
+    ha_port:
+      name: Home Assistant Port
+      description: "Port of your Home Assistant instance. Defaults to the current port."
+      example: 8123
+      required: false
+      selector:
+        number:
+          min: 1
+          max: 65535
+          mode: box
+    web_username:
+      name: Web Access Username
+      description: "The username used for web access authentication."
+      example: "myuser"
+      required: true
+      selector:
+        text:
+    web_password:
+      name: Web Access Password
+      description: "The password used for web access authentication."
+      example: "mypassword"
+      required: true
+      selector:
+        text:
+          type: password
+    myip:
+      name: IP Address
+      description: "Optional IPv4/IPv6 address to update. Defaults to the caller's public IP."
+      example: "203.0.113.45"
+      required: false
+      selector:
+        text:
