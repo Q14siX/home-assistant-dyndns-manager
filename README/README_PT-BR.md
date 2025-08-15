@@ -162,4 +162,4 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 
 ### 📜 Licença
 
-Este projeto está sob a **Licença MIT** – veja [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a **Licença MIT** – veja [LICENSE](https://github.com/Q14siX/home-assistant-dyndns-manager/blob/main/LICENSE) para mais detalhes.
