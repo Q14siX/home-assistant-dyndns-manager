@@ -1,0 +1,212 @@
+{
+  "title": "DynDNS Manager",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Anbieter-Auswahl",
+        "description": "Wählen Sie Ihren Anbieter aus.",
+        "data": {
+          "provider": "Anbieter"
+        }
+      },
+      "provider": {
+        "title": "Anbieter-Konfiguration",
+        "description": "Tragen Sie hier Ihre Zugangsdaten ein.",
+        "data": {
+          "duckdns_token": "DuckDNS Token",
+          "cf_api_token": "Cloudflare API-Token",
+          "strato_user": "STRATO Benutzername",
+          "strato_pass": "STRATO DynDNS Passwort",
+          "allinkl_user": "ALL-INKL DynDNS Benutzername",
+          "allinkl_pass": "ALL-INKL DynDNS Passwort",
+          "noip_user": "No-IP Benutzername",
+          "noip_pass": "No-IP Passwort"
+        }
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Geben Sie eine oder mehrere Domains ein.",
+        "data": {
+          "domains": "Domains",
+          "domain": "Domain"
+        },
+        "data_description": {
+          "domains": "Bearbeiten Sie die Domains mit Chips (mit Enter hinzufügen, mit × entfernen).",
+          "domain": "Geben Sie die Domain an."
+        }
+      },
+      "domains_single": {
+        "title": "Domain",
+        "description": "Geben Sie eine Domain ein.",
+        "data": {
+          "domain": "Domain"
+        },
+        "data_description": {
+          "domain": "Geben Sie die Domain an."
+        }
+      },
+      "webaccess": {
+        "title": "Webzugriff",
+        "description": "Tragen Sie hier Zugangsdaten für den Webzugriff ein.",
+        "data": {
+          "web_user": "Webzugriff Benutzername",
+          "web_pass": "Webzugriff Passwort"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "Anbieter-Konfiguration",
+        "description": "Passen Sie bei Bedarf Ihre Zugangsdaten an.",
+        "data": {
+          "duckdns_token": "DuckDNS Token",
+          "cf_api_token": "Cloudflare API-Token",
+          "strato_user": "STRATO Benutzername",
+          "strato_pass": "STRATO Passwort",
+          "allinkl_user": "ALL-INKL DynDNS Benutzername",
+          "allinkl_pass": "ALL-INKL DynDNS Passwort",
+          "noip_user": "No-IP Benutzername",
+          "noip_pass": "No-IP Passwort"
+        }
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Passen Sie die Domains an.",
+        "data": {
+          "domains": "Domains",
+          "domain": "Domain"
+        },
+        "data_description": {
+          "domains": "Bearbeiten Sie die Domains mit Chips (mit Enter hinzufügen, mit × entfernen).",
+          "domain": "Geben Sie die Domain an."
+        }
+      },
+      "domains_single": {
+        "title": "Domain",
+        "description": "Passen Sie die Domain an.",
+        "data": {
+          "domain": "Domain"
+        },
+        "data_description": {
+          "domain": "Geben Sie die Domain an."
+        }
+      },
+      "webaccess": {
+        "title": "Webzugriff",
+        "description": "Benutzername/Passwort für die URL-Aktualisierung festlegen.",
+        "data": {
+          "web_user": "Webzugriff Benutzername",
+          "web_pass": "Webzugriff Passwort"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "domain_status": {
+        "name": "Domain-Status",
+        "state": {
+          "unknown": "Unbekannt",
+          "unavailable": "Nicht verfügbar",
+          "good": "Aktualisiert",
+          "nochg": "Keine Änderung",
+          "badauth": "Authentifizierung fehlgeschlagen",
+          "nohost": "Host unbekannt",
+          "notfqdn": "Keine FQDN",
+          "numhost": "Zu viele Hosts",
+          "abuse": "Missbrauch gemeldet",
+          "911": "Provider-Fehler"
+        },
+        "state_attributes": {
+          "ipv4": {
+            "name": "IPv4-Adresse",
+            "state": {
+              "unknown": "Unbekannt",
+              "unavailable": "Nicht verfügbar"
+            }
+          },
+          "ipv6": {
+            "name": "IPv6-Adresse",
+            "state": {
+              "unknown": "Unbekannt",
+              "unavailable": "Nicht verfügbar"
+            }
+          },
+          "last_update": {
+            "name": "Letztes Update",
+            "state": {
+              "unknown": "Unbekannt",
+              "unavailable": "Nicht verfügbar"
+            }
+          },
+          "last_response": {
+            "name": "Letzte Antwort",
+            "state": {
+              "unknown": "Unbekannt",
+              "unavailable": "Nicht verfügbar",
+              "nochg": "Keine Änderung",
+              "good": "Aktualisiert",
+              "badauth": "Authentifizierung fehlgeschlagen",
+              "nohost": "Host unbekannt",
+              "notfqdn": "Keine FQDN",
+              "numhost": "Zu viele Hosts",
+              "abuse": "Missbrauch gemeldet",
+              "911": "Provider-Fehler"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "update_all_domains": {
+        "name": "Alle Domains aktualisieren"
+      }
+    }
+  },
+  "services": {
+    "call_update": {
+      "name": "Run DynDNS update",
+      "description": "Calls the DynDNS Manager update URL. IPv4/IPv6 are only sent if the corresponding toggle is enabled. If enabled and the field is empty, the external address will be automatically detected.",
+      "fields": {
+        "ha_host": {
+          "name": "Home Assistant host",
+          "description": "Optional. Defaults to the current Home Assistant hostname."
+        },
+        "ha_port": {
+          "name": "Home Assistant port",
+          "description": "Optional. Defaults to the current port (usually 8123)."
+        },
+        "web_username": {
+          "name": "Web username",
+          "description": "Credentials for web access. If exactly one entry exists, its credentials are used automatically."
+        },
+        "web_password": {
+          "name": "Web password",
+          "description": "Credentials for web access. If exactly one entry exists, its credentials are used automatically."
+        },
+        "use_ipv4": {
+          "name": "Use IPv4",
+          "description": "Enable to include IPv4. If enabled and the field below is empty, the external IPv4 will be auto-detected."
+        },
+        "ipv4": {
+          "name": "IPv4 address",
+          "description": "Optional. Only used if 'Use IPv4' is enabled. Leave empty to auto-detect the external IPv4."
+        },
+        "use_ipv6": {
+          "name": "Use IPv6",
+          "description": "Enable to include IPv6. If enabled and the field below is empty, the external IPv6 will be auto-detected."
+        },
+        "ipv6": {
+          "name": "IPv6 address",
+          "description": "Optional. Only used if 'Use IPv6' is enabled. Leave empty to auto-detect the external IPv6."
+        },
+        "timeout": {
+          "name": "Timeout",
+          "description": "Timeout for the HTTP request in seconds."
+        }
+      }
+    }
+  }
+}
