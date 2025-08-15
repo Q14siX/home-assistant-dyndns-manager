@@ -8,7 +8,7 @@
 
 ---
 ## 📌 Sprachen / Languages
-- [Deutsch (de)](https://github.com/Q14siX/home-assistant-dyndns-manager/blob/main/README/README_DE.md)
+- [Deutsch (de)](https://github.com/Q14siX/home-assistant-dyndns-manager/blob/main/README/README_DE.md#deutsch)
 - [English (en)](#english)
 - Brazilian Portuguese (pt-BR)
 - Chinese (Simplified, zh-CN)
