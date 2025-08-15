@@ -13,5 +13,6 @@
     "http"
   ],
   "config_flow": true,
-  "single_config_entry": false
+  "single_config_entry": false,
+  "description": "Manage and update your dynamic DNS records directly from Home Assistant, with support for multiple providers, automated IP detection, and a built-in service for manual or scheduled updates."
 }
