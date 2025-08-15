@@ -10,7 +10,7 @@
 ## 📌 Idiomas / Languages
 - [Alemão (de)](https://github.com/Q14siX/home-assistant-dyndns-manager/blob/main/README/README_EN.md#deutsch)
 - [Inglês (en)](https://github.com/Q14siX/home-assistant-dyndns-manager/blob/main/README/README_EN.md#english)
-- [Português Brasileiro (pt-BR)](##portugues-brasileiro)
+- [Português Brasileiro (pt-BR)](#portugues-brasileiro)
 - Chinês (Simplificado, zh-CN)
 - Chinês (Tradicional, zh-TW)
 - Tcheco (cs)
