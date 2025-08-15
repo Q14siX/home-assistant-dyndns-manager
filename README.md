@@ -8,8 +8,26 @@
 
 ---
 ## 📌 Sprachen / Languages
-- [Deutsch](#deutsch)
-- [English](#english)
+- [Deutsch (de)](#deutsch)
+- [English (en)](#english)
+- Brazilian Portuguese (pt-BR)
+- Chinese (Traditional, zh-TW)
+- Chinese (Simplified, zh-CN)
+- Danish (da)
+- Finnish (fi)
+- French (fr)
+- Italian (it)
+- Japanese (ja)
+- Dutch (nl)
+- Norwegian (Bokmål, nb)
+- Polish (pl)
+- Portuguese (pt)
+- Russian (ru)
+- Swedish (sv)
+- Spanish (es)
+- Czech (cs)
+- Turkish (tr)
+- Hungarian (hu)
 ---
 
 ## Deutsch
