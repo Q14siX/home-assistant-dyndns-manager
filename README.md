@@ -7,7 +7,7 @@
 ![Downloads](https://img.shields.io/github/downloads/Q14siX/home-assistant-dyndns-manager/total)
 
 ---
-## 📌 Sprachen / Languages
+## 📌 Línguas / 语言 / 語言 / Jazyky / Sprog / Sprachen / Talen / Languages / Kielet / Langues / Nyelvek / Lingue / 言語 / Språk / Języki / Línguas / Языки / Idiomas / Språk / Diller
 - [Brazilian Portuguese (pt-BR)](https://github.com/Q14siX/home-assistant-dyndns-manager/blob/main/README/README_PT-BR.md#portugues-brasileiro)
 - Chinese (Simplified, zh-CN)
 - Chinese (Traditional, zh-TW)
