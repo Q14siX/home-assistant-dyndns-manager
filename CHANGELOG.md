@@ -1,3 +1,17 @@
+# DynDNS Manager
+
+[![Version](https://img.shields.io/github/v/release/Q14siX/home-assistant-dyndns-manager)](https://github.com/Q14siX/home-assistant-dyndns-manager/releases)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Languages](https://img.shields.io/badge/languages-20-blue.svg)
+![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
+![Downloads](https://img.shields.io/github/downloads/Q14siX/home-assistant-dyndns-manager/total)
+
+---
+
+<a href="https://www.buymeacoffee.com/Q14siX" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+---
+
 ## 📑 Changelog / 📑 Registro de alterações / 📑 更新日志 / 📑 更新日誌 / 📑 Seznam změn / 📑 Ændringslog / 📑 Änderungsprotokoll / 📑 Wijzigingslogboek / 📑 Muutosloki / 📑 Journal des modifications / 📑 Változások listája / 📑 Registro delle modifiche / 📑 変更履歴 / 📑 Endringslogg / 📑 Dziennik zmian / 📑 Registo de alterações / 📑 Журнал изменений / 📑 Registro de cambios / 📑 Ändringslogg / 📑 Değişiklik Günlüğü
 
 - 🇧🇷 **Português Brasileiro (pt-BR)**: Todas as mudanças relevantes deste projeto são documentadas aqui. O changelog está disponível apenas em alemão e inglês.  
