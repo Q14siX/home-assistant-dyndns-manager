@@ -133,7 +133,8 @@ http://<ha_host>:<ha_port>/dyndns-manager/?username=<username>&password=<pass>&i
 - `<username>` / `<pass>` → Zugangsdaten für den Webzugriff (siehe Einrichtungsassistenten)
 - `<ipaddr>` / `<ip6addr>` → Platzhalter für die IPv4 und/oder IPv6
 
-💡 **Hinweis:** In der Fritz!Box muss in der URL nur `<ha_host>` und `<ha_port>` angepasst werden. Alle anderen Werte (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) werden von der Fritz!Box automatisch ersetzt, wenn Sie das Eingabeformular ausfüllen.
+> [!TIP]
+> In der Fritz!Box muss in der URL nur `<ha_host>` und `<ha_port>` angepasst werden. Alle anderen Werte (`<username>`, `<pass>`, `<ipaddr>`, `<ip6addr>`) werden von der Fritz!Box automatisch ersetzt, wenn Sie das Eingabeformular ausfüllen.
 
 ![FRITZ!BOX Eingabemaske](https://raw.githubusercontent.com/Q14siX/home-assistant-dyndns-manager/master/images/FRITZ!Box.png)
 
