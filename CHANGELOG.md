@@ -36,8 +36,20 @@
 - 🇹🇷 **Türkçe (tr)**: Bu projedeki tüm önemli değişiklikler burada belgelenmektedir. Değişiklik günlüğü yalnızca Almanca ve İngilizce olarak mevcuttur.  
 
 ---
-
 <details open>
+  <summary>📦 Update v20250818.1800</summary>
+
+### 🇩🇪 Fehlerbehebungen
+- Kleine Fehlerbehebungen und Schönheitsreparaturen.
+
+### 🇬🇧 Bug Fixes
+- Minor bug fixes and cosmetic improvements.
+
+</details>
+
+---
+
+<details>
   <summary>📦 Update v20250818.1615</summary>
 
 ### 🇩🇪 Fehlerbehebungen
