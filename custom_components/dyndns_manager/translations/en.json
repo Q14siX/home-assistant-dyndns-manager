@@ -1,0 +1,212 @@
+{
+  "title": "DynDNS Manager",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Provider Selection",
+        "description": "Select your provider.",
+        "data": {
+          "provider": "Provider"
+        }
+      },
+      "provider": {
+        "title": "Provider Configuration",
+        "description": "Enter your credentials here.",
+        "data": {
+          "duckdns_token": "DuckDNS token",
+          "cf_api_token": "Cloudflare API token",
+          "strato_user": "STRATO username",
+          "strato_pass": "STRATO DynDNS password",
+          "allinkl_user": "ALL-INKL DynDNS username",
+          "allinkl_pass": "ALL-INKL DynDNS password",
+          "noip_user": "No-IP username",
+          "noip_pass": "No-IP password"
+        }
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Enter one or more domains.",
+        "data": {
+          "domains": "Domains",
+          "domain": "Domain"
+        },
+        "data_description": {
+          "domains": "Edit domains using chips (press Enter to add, × to remove).",
+          "domain": "Specify the domain."
+        }
+      },
+      "domains_single": {
+        "title": "Domain",
+        "description": "Enter a domain.",
+        "data": {
+          "domain": "Domain"
+        },
+        "data_description": {
+          "domain": "Specify the domain."
+        }
+      },
+      "webaccess": {
+        "title": "Web access",
+        "description": "Enter credentials for web access here.",
+        "data": {
+          "web_user": "Web access username",
+          "web_pass": "Web access password"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "Provider Configuration",
+        "description": "Adjust your credentials if needed.",
+        "data": {
+          "duckdns_token": "DuckDNS token",
+          "cf_api_token": "Cloudflare API token",
+          "strato_user": "STRATO username",
+          "strato_pass": "STRATO DynDNS password",
+          "allinkl_user": "ALL-INKL DynDNS username",
+          "allinkl_pass": "ALL-INKL DynDNS password",
+          "noip_user": "No-IP username",
+          "noip_pass": "No-IP password"
+        }
+      },
+      "domains": {
+        "title": "Domains",
+        "description": "Adjust the domains.",
+        "data": {
+          "domains": "Domains",
+          "domain": "Domain"
+        },
+        "data_description": {
+          "domains": "Edit domains using chips (press Enter to add, × to remove).",
+          "domain": "Specify the domain."
+        }
+      },
+      "domains_single": {
+        "title": "Domain",
+        "description": "Adjust the domain.",
+        "data": {
+          "domain": "Domain"
+        },
+        "data_description": {
+          "domain": "Specify the domain."
+        }
+      },
+      "webaccess": {
+        "title": "Web access",
+        "description": "Set username/password for URL update.",
+        "data": {
+          "web_user": "Web access username",
+          "web_pass": "Web access password"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "domain_status": {
+        "name": "Domain status",
+        "state": {
+          "unknown": "Unknown",
+          "unavailable": "Unavailable",
+          "good": "Updated",
+          "nochg": "No change",
+          "badauth": "Authentication failed",
+          "nohost": "Host unknown",
+          "notfqdn": "Not a FQDN",
+          "numhost": "Too many hosts",
+          "abuse": "Abuse reported",
+          "911": "Provider error"
+        },
+        "state_attributes": {
+          "ipv4": {
+            "name": "IPv4 address",
+            "state": {
+              "unknown": "Unknown",
+              "unavailable": "Unavailable"
+            }
+          },
+          "ipv6": {
+            "name": "IPv6 address",
+            "state": {
+              "unknown": "Unknown",
+              "unavailable": "Unavailable"
+            }
+          },
+          "last_update": {
+            "name": "Last update",
+            "state": {
+              "unknown": "Unknown",
+              "unavailable": "Unavailable"
+            }
+          },
+          "last_response": {
+            "name": "Last response",
+            "state": {
+              "unknown": "Unknown",
+              "unavailable": "Unavailable",
+              "nochg": "No change",
+              "good": "Updated",
+              "badauth": "Authentication failed",
+              "nohost": "Host unknown",
+              "notfqdn": "Not a FQDN",
+              "numhost": "Too many hosts",
+              "abuse": "Abuse reported",
+              "911": "Provider error"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "update_all_domains": {
+        "name": "Update all domains"
+      }
+    }
+  },
+  "services": {
+    "call_update": {
+      "name": "Run DynDNS update",
+      "description": "Calls the update URL of the DynDNS Manager. IPv4/IPv6 are only sent if the respective switch is enabled. If enabled and the field is empty, the external address is determined automatically.",
+      "fields": {
+        "ha_host": {
+          "name": "Home Assistant host",
+          "description": "Optional. Defaults to the current hostname of Home Assistant."
+        },
+        "ha_port": {
+          "name": "Home Assistant port",
+          "description": "Optional. Defaults to the current port (usually 8123)."
+        },
+        "web_username": {
+          "name": "Web username",
+          "description": "Web access credentials. If exactly one entry exists, its credentials are used automatically."
+        },
+        "web_password": {
+          "name": "Web password",
+          "description": "Web access credentials. If exactly one entry exists, its credentials are used automatically."
+        },
+        "use_ipv4": {
+          "name": "Use IPv4",
+          "description": "Enable to send IPv4. If enabled and the field is empty, the external IPv4 is determined automatically."
+        },
+        "ipv4": {
+          "name": "IPv4 address",
+          "description": "Optional. Only used when 'Use IPv4' is enabled. Leave empty to determine the external IPv4 automatically."
+        },
+        "use_ipv6": {
+          "name": "Use IPv6",
+          "description": "Enable to send IPv6. If enabled and the field is empty, the external IPv6 is determined automatically."
+        },
+        "ipv6": {
+          "name": "IPv6 address",
+          "description": "Optional. Only used when 'Use IPv6' is enabled. Leave empty to determine the external IPv6 automatically."
+        },
+        "timeout": {
+          "name": "Timeout",
+          "description": "HTTP request timeout in seconds."
+        }
+      }
+    }
+  }
+}

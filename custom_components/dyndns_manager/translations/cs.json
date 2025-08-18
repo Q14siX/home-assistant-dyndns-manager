@@ -1,0 +1,212 @@
+{
+  "title": "Správce DynDNS",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Výběr poskytovatele",
+        "description": "Vyberte svého poskytovatele.",
+        "data": {
+          "provider": "Poskytovatel"
+        }
+      },
+      "provider": {
+        "title": "Konfigurace poskytovatele",
+        "description": "Zadejte zde své přihlašovací údaje.",
+        "data": {
+          "duckdns_token": "Token DuckDNS",
+          "cf_api_token": "API token Cloudflare",
+          "strato_user": "Uživatelské jméno STRATO",
+          "strato_pass": "Heslo STRATO DynDNS",
+          "allinkl_user": "Uživatelské jméno ALL-INKL DynDNS",
+          "allinkl_pass": "Heslo ALL-INKL DynDNS",
+          "noip_user": "Uživatelské jméno No-IP",
+          "noip_pass": "Heslo No-IP"
+        }
+      },
+      "domains": {
+        "title": "Domény",
+        "description": "Zadejte jednu nebo více domén.",
+        "data": {
+          "domains": "Domény",
+          "domain": "Doména"
+        },
+        "data_description": {
+          "domains": "Upravte domény pomocí štítků (přidejte klávesou Enter, odeberte ×).",
+          "domain": "Zadejte doménu."
+        }
+      },
+      "domains_single": {
+        "title": "Doména",
+        "description": "Zadejte doménu.",
+        "data": {
+          "domain": "Doména"
+        },
+        "data_description": {
+          "domain": "Zadejte doménu."
+        }
+      },
+      "webaccess": {
+        "title": "Webový přístup",
+        "description": "Zadejte zde přihlašovací údaje pro webový přístup.",
+        "data": {
+          "web_user": "Uživatelské jméno pro webový přístup",
+          "web_pass": "Heslo pro webový přístup"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "Konfigurace poskytovatele",
+        "description": "V případě potřeby upravte své přihlašovací údaje.",
+        "data": {
+          "duckdns_token": "Token DuckDNS",
+          "cf_api_token": "API token Cloudflare",
+          "strato_user": "Uživatelské jméno STRATO",
+          "strato_pass": "Heslo STRATO",
+          "allinkl_user": "Uživatelské jméno ALL-INKL DynDNS",
+          "allinkl_pass": "Heslo ALL-INKL DynDNS",
+          "noip_user": "Uživatelské jméno No-IP",
+          "noip_pass": "Heslo No-IP"
+        }
+      },
+      "domains": {
+        "title": "Domény",
+        "description": "Upravte domény.",
+        "data": {
+          "domains": "Domény",
+          "domain": "Doména"
+        },
+        "data_description": {
+          "domains": "Upravte domény pomocí štítků (přidejte klávesou Enter, odeberte ×).",
+          "domain": "Zadejte doménu."
+        }
+      },
+      "domains_single": {
+        "title": "Doména",
+        "description": "Upravte doménu.",
+        "data": {
+          "domain": "Doména"
+        },
+        "data_description": {
+          "domain": "Zadejte doménu."
+        }
+      },
+      "webaccess": {
+        "title": "Webový přístup",
+        "description": "Nastavte uživatelské jméno/heslo pro aktualizaci URL.",
+        "data": {
+          "web_user": "Uživatelské jméno pro webový přístup",
+          "web_pass": "Heslo pro webový přístup"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "domain_status": {
+        "name": "Stav domény",
+        "state": {
+          "unknown": "Neznámé",
+          "unavailable": "Nedostupné",
+          "good": "Aktualizováno",
+          "nochg": "Bez změny",
+          "badauth": "Ověření se nezdařilo",
+          "nohost": "Neznámý hostitel",
+          "notfqdn": "Není FQDN",
+          "numhost": "Příliš mnoho hostitelů",
+          "abuse": "Zneužití nahlášeno",
+          "911": "Chyba poskytovatele"
+        },
+        "state_attributes": {
+          "ipv4": {
+            "name": "Adresa IPv4",
+            "state": {
+              "unknown": "Neznámé",
+              "unavailable": "Nedostupné"
+            }
+          },
+          "ipv6": {
+            "name": "Adresa IPv6",
+            "state": {
+              "unknown": "Neznámé",
+              "unavailable": "Nedostupné"
+            }
+          },
+          "last_update": {
+            "name": "Poslední aktualizace",
+            "state": {
+              "unknown": "Neznámé",
+              "unavailable": "Nedostupné"
+            }
+          },
+          "last_response": {
+            "name": "Poslední odpověď",
+            "state": {
+              "unknown": "Neznámé",
+              "unavailable": "Nedostupné",
+              "nochg": "Bez změny",
+              "good": "Aktualizováno",
+              "badauth": "Ověření se nezdařilo",
+              "nohost": "Neznámý hostitel",
+              "notfqdn": "Není FQDN",
+              "numhost": "Příliš mnoho hostitelů",
+              "abuse": "Zneužití nahlášeno",
+              "911": "Chyba poskytovatele"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "update_all_domains": {
+        "name": "Aktualizovat všechny domény"
+      }
+    }
+  },
+  "services": {
+    "call_update": {
+      "name": "Provést aktualizaci DynDNS",
+      "description": "Volá aktualizační URL správce DynDNS. Pokud je pole prázdné, externí adresa se určí automaticky.",
+      "fields": {
+        "ha_host": {
+          "name": "Hostitel Home Assistant",
+          "description": "Volitelné. Výchozí je aktuální název hostitele Home Assistant."
+        },
+        "ha_port": {
+          "name": "Port Home Assistant",
+          "description": "Volitelné. Výchozí je aktuální port (obvykle 8123)."
+        },
+        "web_username": {
+          "name": "Webové uživatelské jméno",
+          "description": "Přihlašovací údaje pro webový přístup. Pokud existuje pouze jedna položka, použije se automaticky."
+        },
+        "web_password": {
+          "name": "Webové heslo",
+          "description": "Přihlašovací údaje pro webový přístup. Pokud existuje pouze jedna položka, použije se automaticky."
+        },
+        "use_ipv4": {
+          "name": "Použít IPv4",
+          "description": "Povolte pro odeslání IPv4. Pokud je povoleno a pole je prázdné, externí IPv4 se určí automaticky."
+        },
+        "ipv4": {
+          "name": "Adresa IPv4",
+          "description": "Volitelné. Používá se pouze při povolení 'Použít IPv4'. Ponechte prázdné pro automatické určení externí IPv4."
+        },
+        "use_ipv6": {
+          "name": "Použít IPv6",
+          "description": "Povolte pro odeslání IPv6. Pokud je povoleno a pole je prázdné, externí IPv6 se určí automaticky."
+        },
+        "ipv6": {
+          "name": "Adresa IPv6",
+          "description": "Volitelné. Používá se pouze při povolení 'Použít IPv6'. Ponechte prázdné pro automatické určení externí IPv6."
+        },
+        "timeout": {
+          "name": "Časový limit",
+          "description": "Časový limit pro požadavek HTTP v sekundách."
+        }
+      }
+    }
+  }
+}

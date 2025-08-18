@@ -1,0 +1,212 @@
+{
+  "title": "DynDNS-hanterare",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Välj leverantör",
+        "description": "Välj din leverantör.",
+        "data": {
+          "provider": "Leverantör"
+        }
+      },
+      "provider": {
+        "title": "Leverantörskonfiguration",
+        "description": "Ange dina inloggningsuppgifter här.",
+        "data": {
+          "duckdns_token": "DuckDNS-token",
+          "cf_api_token": "Cloudflare API-token",
+          "strato_user": "STRATO-användarnamn",
+          "strato_pass": "STRATO DynDNS-lösenord",
+          "allinkl_user": "ALL-INKL DynDNS-användarnamn",
+          "allinkl_pass": "ALL-INKL DynDNS-lösenord",
+          "noip_user": "No-IP-användarnamn",
+          "noip_pass": "No-IP-lösenord"
+        }
+      },
+      "domains": {
+        "title": "Domäner",
+        "description": "Ange en eller flera domäner.",
+        "data": {
+          "domains": "Domäner",
+          "domain": "Domän"
+        },
+        "data_description": {
+          "domains": "Redigera domänerna med etiketter (lägg till med Enter, ta bort med ×).",
+          "domain": "Ange domänen."
+        }
+      },
+      "domains_single": {
+        "title": "Domän",
+        "description": "Ange en domän.",
+        "data": {
+          "domain": "Domän"
+        },
+        "data_description": {
+          "domain": "Ange domänen."
+        }
+      },
+      "webaccess": {
+        "title": "Webbåtkomst",
+        "description": "Ange inloggningsuppgifter för webbåtkomst här.",
+        "data": {
+          "web_user": "Användarnamn för webbåtkomst",
+          "web_pass": "Lösenord för webbåtkomst"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "Leverantörskonfiguration",
+        "description": "Justera dina inloggningsuppgifter vid behov.",
+        "data": {
+          "duckdns_token": "DuckDNS-token",
+          "cf_api_token": "Cloudflare API-token",
+          "strato_user": "STRATO-användarnamn",
+          "strato_pass": "STRATO-lösenord",
+          "allinkl_user": "ALL-INKL DynDNS-användarnamn",
+          "allinkl_pass": "ALL-INKL DynDNS-lösenord",
+          "noip_user": "No-IP-användarnamn",
+          "noip_pass": "No-IP-lösenord"
+        }
+      },
+      "domains": {
+        "title": "Domäner",
+        "description": "Justera domänerna.",
+        "data": {
+          "domains": "Domäner",
+          "domain": "Domän"
+        },
+        "data_description": {
+          "domains": "Redigera domänerna med etiketter (lägg till med Enter, ta bort med ×).",
+          "domain": "Ange domänen."
+        }
+      },
+      "domains_single": {
+        "title": "Domän",
+        "description": "Justera domänen.",
+        "data": {
+          "domain": "Domän"
+        },
+        "data_description": {
+          "domain": "Ange domänen."
+        }
+      },
+      "webaccess": {
+        "title": "Webbåtkomst",
+        "description": "Ange användarnamn/lösenord för URL-uppdatering.",
+        "data": {
+          "web_user": "Användarnamn för webbåtkomst",
+          "web_pass": "Lösenord för webbåtkomst"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "domain_status": {
+        "name": "Domänstatus",
+        "state": {
+          "unknown": "Okänd",
+          "unavailable": "Inte tillgänglig",
+          "good": "Uppdaterad",
+          "nochg": "Ingen ändring",
+          "badauth": "Autentisering misslyckades",
+          "nohost": "Okänd värd",
+          "notfqdn": "Inte en FQDN",
+          "numhost": "För många värdar",
+          "abuse": "Missbruk rapporterat",
+          "911": "Leverantörsfel"
+        },
+        "state_attributes": {
+          "ipv4": {
+            "name": "IPv4-adress",
+            "state": {
+              "unknown": "Okänd",
+              "unavailable": "Inte tillgänglig"
+            }
+          },
+          "ipv6": {
+            "name": "IPv6-adress",
+            "state": {
+              "unknown": "Okänd",
+              "unavailable": "Inte tillgänglig"
+            }
+          },
+          "last_update": {
+            "name": "Senaste uppdateringen",
+            "state": {
+              "unknown": "Okänd",
+              "unavailable": "Inte tillgänglig"
+            }
+          },
+          "last_response": {
+            "name": "Senaste svaret",
+            "state": {
+              "unknown": "Okänd",
+              "unavailable": "Inte tillgänglig",
+              "nochg": "Ingen ändring",
+              "good": "Uppdaterad",
+              "badauth": "Autentisering misslyckades",
+              "nohost": "Okänd värd",
+              "notfqdn": "Inte en FQDN",
+              "numhost": "För många värdar",
+              "abuse": "Missbruk rapporterat",
+              "911": "Leverantörsfel"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "update_all_domains": {
+        "name": "Uppdatera alla domäner"
+      }
+    }
+  },
+  "services": {
+    "call_update": {
+      "name": "Kör DynDNS-uppdatering",
+      "description": "Anropar DynDNS-hanterarens uppdaterings-URL. Om fältet är tomt bestäms extern adress automatiskt.",
+      "fields": {
+        "ha_host": {
+          "name": "Home Assistant-värd",
+          "description": "Valfritt. Standard är det aktuella värdnamnet för Home Assistant."
+        },
+        "ha_port": {
+          "name": "Home Assistant-port",
+          "description": "Valfritt. Standard är den aktuella porten (vanligtvis 8123)."
+        },
+        "web_username": {
+          "name": "Webbanvändarnamn",
+          "description": "Inloggningsuppgifter för webbåtkomst. Om endast en post finns används den automatiskt."
+        },
+        "web_password": {
+          "name": "Webblösenord",
+          "description": "Inloggningsuppgifter för webbåtkomst. Om endast en post finns används den automatiskt."
+        },
+        "use_ipv4": {
+          "name": "Använd IPv4",
+          "description": "Aktivera för att skicka med IPv4. Om aktiverad och fältet är tomt bestäms extern IPv4 automatiskt."
+        },
+        "ipv4": {
+          "name": "IPv4-adress",
+          "description": "Valfritt. Används endast om 'Använd IPv4' är aktiverat. Lämna tomt för att bestämma extern IPv4 automatiskt."
+        },
+        "use_ipv6": {
+          "name": "Använd IPv6",
+          "description": "Aktivera för att skicka med IPv6. Om aktiverad och fältet är tomt bestäms extern IPv6 automatiskt."
+        },
+        "ipv6": {
+          "name": "IPv6-adress",
+          "description": "Valfritt. Används endast om 'Använd IPv6' är aktiverat. Lämna tomt för att bestämma extern IPv6 automatiskt."
+        },
+        "timeout": {
+          "name": "Tidsgräns",
+          "description": "Tidsgräns för HTTP-förfrågan i sekunder."
+        }
+      }
+    }
+  }
+}

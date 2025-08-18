@@ -1,0 +1,212 @@
+{
+  "title": "DynDNS Manager",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sélection du fournisseur",
+        "description": "Sélectionnez votre fournisseur.",
+        "data": {
+          "provider": "Fournisseur"
+        }
+      },
+      "provider": {
+        "title": "Configuration du fournisseur",
+        "description": "Entrez vos identifiants ici.",
+        "data": {
+          "duckdns_token": "Jeton DuckDNS",
+          "cf_api_token": "Jeton API Cloudflare",
+          "strato_user": "Nom d'utilisateur STRATO",
+          "strato_pass": "Mot de passe DynDNS STRATO",
+          "allinkl_user": "Nom d'utilisateur DynDNS ALL-INKL",
+          "allinkl_pass": "Mot de passe DynDNS ALL-INKL",
+          "noip_user": "Nom d'utilisateur No-IP",
+          "noip_pass": "Mot de passe No-IP"
+        }
+      },
+      "domains": {
+        "title": "Domaines",
+        "description": "Entrez un ou plusieurs domaines.",
+        "data": {
+          "domains": "Domaines",
+          "domain": "Domaine"
+        },
+        "data_description": {
+          "domains": "Modifiez les domaines à l'aide de puces (appuyez sur Entrée pour ajouter, × pour supprimer).",
+          "domain": "Indiquez le domaine."
+        }
+      },
+      "domains_single": {
+        "title": "Domaine",
+        "description": "Entrez un domaine.",
+        "data": {
+          "domain": "Domaine"
+        },
+        "data_description": {
+          "domain": "Indiquez le domaine."
+        }
+      },
+      "webaccess": {
+        "title": "Accès Web",
+        "description": "Entrez ici les identifiants pour l'accès Web.",
+        "data": {
+          "web_user": "Nom d'utilisateur Web",
+          "web_pass": "Mot de passe Web"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "provider": {
+        "title": "Configuration du fournisseur",
+        "description": "Ajustez vos identifiants si nécessaire.",
+        "data": {
+          "duckdns_token": "Jeton DuckDNS",
+          "cf_api_token": "Jeton API Cloudflare",
+          "strato_user": "Nom d'utilisateur STRATO",
+          "strato_pass": "Mot de passe DynDNS STRATO",
+          "allinkl_user": "Nom d'utilisateur DynDNS ALL-INKL",
+          "allinkl_pass": "Mot de passe DynDNS ALL-INKL",
+          "noip_user": "Nom d'utilisateur No-IP",
+          "noip_pass": "Mot de passe No-IP"
+        }
+      },
+      "domains": {
+        "title": "Domaines",
+        "description": "Ajustez les domaines.",
+        "data": {
+          "domains": "Domaines",
+          "domain": "Domaine"
+        },
+        "data_description": {
+          "domains": "Modifiez les domaines à l'aide de puces (appuyez sur Entrée pour ajouter, × pour supprimer).",
+          "domain": "Indiquez le domaine."
+        }
+      },
+      "domains_single": {
+        "title": "Domaine",
+        "description": "Ajustez le domaine.",
+        "data": {
+          "domain": "Domaine"
+        },
+        "data_description": {
+          "domain": "Indiquez le domaine."
+        }
+      },
+      "webaccess": {
+        "title": "Accès Web",
+        "description": "Définir nom d'utilisateur/mot de passe pour la mise à jour de l'URL.",
+        "data": {
+          "web_user": "Nom d'utilisateur Web",
+          "web_pass": "Mot de passe Web"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "domain_status": {
+        "name": "Statut du domaine",
+        "state": {
+          "unknown": "Inconnu",
+          "unavailable": "Indisponible",
+          "good": "Mis à jour",
+          "nochg": "Aucun changement",
+          "badauth": "Échec de l'authentification",
+          "nohost": "Hôte inconnu",
+          "notfqdn": "Pas un FQDN",
+          "numhost": "Trop d'hôtes",
+          "abuse": "Abus signalé",
+          "911": "Erreur du fournisseur"
+        },
+        "state_attributes": {
+          "ipv4": {
+            "name": "Adresse IPv4",
+            "state": {
+              "unknown": "Inconnu",
+              "unavailable": "Indisponible"
+            }
+          },
+          "ipv6": {
+            "name": "Adresse IPv6",
+            "state": {
+              "unknown": "Inconnu",
+              "unavailable": "Indisponible"
+            }
+          },
+          "last_update": {
+            "name": "Dernière mise à jour",
+            "state": {
+              "unknown": "Inconnu",
+              "unavailable": "Indisponible"
+            }
+          },
+          "last_response": {
+            "name": "Dernière réponse",
+            "state": {
+              "unknown": "Inconnu",
+              "unavailable": "Indisponible",
+              "nochg": "Aucun changement",
+              "good": "Mis à jour",
+              "badauth": "Échec de l'authentification",
+              "nohost": "Hôte inconnu",
+              "notfqdn": "Pas un FQDN",
+              "numhost": "Trop d'hôtes",
+              "abuse": "Abus signalé",
+              "911": "Erreur du fournisseur"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "update_all_domains": {
+        "name": "Mettre à jour tous les domaines"
+      }
+    }
+  },
+  "services": {
+    "call_update": {
+      "name": "Exécuter la mise à jour DynDNS",
+      "description": "Appelle l'URL de mise à jour du gestionnaire DynDNS. IPv4/IPv6 ne sont envoyées que si l'interrupteur correspondant est activé. Si activé et le champ est vide, l'adresse externe est déterminée automatiquement.",
+      "fields": {
+        "ha_host": {
+          "name": "Hôte Home Assistant",
+          "description": "Optionnel. Par défaut, le nom d'hôte actuel de Home Assistant."
+        },
+        "ha_port": {
+          "name": "Port Home Assistant",
+          "description": "Optionnel. Par défaut, le port actuel (généralement 8123)."
+        },
+        "web_username": {
+          "name": "Nom d'utilisateur Web",
+          "description": "Identifiants d'accès Web. S'il n'existe qu'une seule entrée, ses identifiants sont utilisés automatiquement."
+        },
+        "web_password": {
+          "name": "Mot de passe Web",
+          "description": "Identifiants d'accès Web. S'il n'existe qu'une seule entrée, ses identifiants sont utilisés automatiquement."
+        },
+        "use_ipv4": {
+          "name": "Utiliser IPv4",
+          "description": "Activer pour envoyer IPv4. Si activé et le champ est vide, l'IPv4 externe est déterminée automatiquement."
+        },
+        "ipv4": {
+          "name": "Adresse IPv4",
+          "description": "Optionnel. Utilisé uniquement lorsque 'Utiliser IPv4' est activé. Laisser vide pour déterminer automatiquement l'IPv4 externe."
+        },
+        "use_ipv6": {
+          "name": "Utiliser IPv6",
+          "description": "Activer pour envoyer IPv6. Si activé et le champ est vide, l'IPv6 externe est déterminée automatiquement."
+        },
+        "ipv6": {
+          "name": "Adresse IPv6",
+          "description": "Optionnel. Utilisé uniquement lorsque 'Utiliser IPv6' est activé. Laisser vide pour déterminer automatiquement l'IPv6 externe."
+        },
+        "timeout": {
+          "name": "Délai d'attente",
+          "description": "Délai d'expiration de la requête HTTP en secondes."
+        }
+      }
+    }
+  }
+}
