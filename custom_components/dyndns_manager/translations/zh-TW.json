@@ -117,7 +117,13 @@
           "notfqdn": "不是 FQDN",
           "numhost": "主機過多",
           "abuse": "已回報濫用",
-          "911": "服務提供商錯誤"
+          "911": "服務提供商錯誤",
+          "!donator": "功能受限",
+          "badagent": "無效用戶端",
+          "dnserr": "DNS錯誤",
+          "error": "伺服器錯誤",
+          "ok": "更新成功",
+          "timeout": "逾時"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "不是 FQDN",
               "numhost": "主機過多",
               "abuse": "已回報濫用",
-              "911": "服務提供商錯誤"
+              "911": "服務提供商錯誤",
+              "!donator": "功能受限",
+              "badagent": "無效用戶端",
+              "dnserr": "DNS錯誤",
+              "error": "伺服器錯誤",
+              "ok": "更新成功",
+              "timeout": "逾時"
             }
           }
         }
