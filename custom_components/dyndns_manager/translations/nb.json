@@ -117,7 +117,13 @@
           "notfqdn": "Ikke en FQDN",
           "numhost": "For mange verter",
           "abuse": "Misbruk rapportert",
-          "911": "Leverandørfeil"
+          "911": "Leverandørfeil",
+          "!donator": "Funksjon blokkert",
+          "badagent": "Ugyldig klient",
+          "dnserr": "DNS-feil",
+          "error": "Serverfeil",
+          "ok": "Oppdatering vellykket",
+          "timeout": "Tidsavbrudd"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "Ikke en FQDN",
               "numhost": "For mange verter",
               "abuse": "Misbruk rapportert",
-              "911": "Leverandørfeil"
+              "911": "Leverandørfeil",
+              "!donator": "Funksjon blokkert",
+              "badagent": "Ugyldig klient",
+              "dnserr": "DNS-feil",
+              "error": "Serverfeil",
+              "ok": "Oppdatering vellykket",
+              "timeout": "Tidsavbrudd"
             }
           }
         }
