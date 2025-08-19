@@ -117,7 +117,13 @@
           "notfqdn": "Não é um FQDN",
           "numhost": "Demasiados hosts",
           "abuse": "Abuso reportado",
-          "911": "Erro do fornecedor"
+          "911": "Erro do fornecedor",
+          "!donator": "Função bloqueada",
+          "badagent": "Cliente inválido",
+          "dnserr": "Erro de DNS",
+          "error": "Erro do servidor",
+          "ok": "Atualização bem-sucedida",
+          "timeout": "Tempo esgotado"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "Não é um FQDN",
               "numhost": "Demasiados hosts",
               "abuse": "Abuso reportado",
-              "911": "Erro do fornecedor"
+              "911": "Erro do fornecedor",
+              "!donator": "Função bloqueada",
+              "badagent": "Cliente inválido",
+              "dnserr": "Erro de DNS",
+              "error": "Erro do servidor",
+              "ok": "Atualização bem-sucedida",
+              "timeout": "Tempo esgotado"
             }
           }
         }
