@@ -117,7 +117,13 @@
           "notfqdn": "Geen FQDN",
           "numhost": "Te veel hosts",
           "abuse": "Misbruik gemeld",
-          "911": "Providerfout"
+          "911": "Providerfout",
+          "!donator": "Functie geblokkeerd",
+          "badagent": "Ongeldige client",
+          "dnserr": "DNS-fout",
+          "error": "Serverfout",
+          "ok": "Update geslaagd",
+          "timeout": "Time-out"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "Geen FQDN",
               "numhost": "Te veel hosts",
               "abuse": "Misbruik gemeld",
-              "911": "Providerfout"
+              "911": "Providerfout",
+              "!donator": "Functie geblokkeerd",
+              "badagent": "Ongeldige client",
+              "dnserr": "DNS-fout",
+              "error": "Serverfout",
+              "ok": "Update geslaagd",
+              "timeout": "Time-out"
             }
           }
         }
