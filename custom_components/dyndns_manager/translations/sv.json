@@ -117,7 +117,13 @@
           "notfqdn": "Inte en FQDN",
           "numhost": "För många värdar",
           "abuse": "Missbruk rapporterat",
-          "911": "Leverantörsfel"
+          "911": "Leverantörsfel",
+          "!donator": "Funktion blockerad",
+          "badagent": "Ogiltig klient",
+          "dnserr": "DNS-fel",
+          "error": "Serverfel",
+          "ok": "Uppdatering lyckades",
+          "timeout": "Tidsgräns överskriden"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "Inte en FQDN",
               "numhost": "För många värdar",
               "abuse": "Missbruk rapporterat",
-              "911": "Leverantörsfel"
+              "911": "Leverantörsfel",
+              "!donator": "Funktion blockerad",
+              "badagent": "Ogiltig klient",
+              "dnserr": "DNS-fel",
+              "error": "Serverfel",
+              "ok": "Uppdatering lyckades",
+              "timeout": "Tidsgräns överskriden"
             }
           }
         }
