@@ -117,7 +117,13 @@
           "notfqdn": "Nem FQDN",
           "numhost": "Túl sok gép",
           "abuse": "Visszaélés jelentve",
-          "911": "Szolgáltató hiba"
+          "911": "Szolgáltató hiba",
+          "!donator": "Funkció tiltva",
+          "badagent": "Érvénytelen kliens",
+          "dnserr": "DNS-hiba",
+          "error": "Szerverhiba",
+          "ok": "Sikeres frissítés",
+          "timeout": "Időtúllépés"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "Nem FQDN",
               "numhost": "Túl sok gép",
               "abuse": "Visszaélés jelentve",
-              "911": "Szolgáltató hiba"
+              "911": "Szolgáltató hiba",
+              "!donator": "Funkció tiltva",
+              "badagent": "Érvénytelen kliens",
+              "dnserr": "DNS-hiba",
+              "error": "Szerverhiba",
+              "ok": "Sikeres frissítés",
+              "timeout": "Időtúllépés"
             }
           }
         }
