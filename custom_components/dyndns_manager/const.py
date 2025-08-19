@@ -1,3 +1,6 @@
+from __future__ import annotations
+
+from enum import StrEnum
 
 DOMAIN = "dyndns_manager"
 
@@ -25,3 +28,26 @@ UPDATE_PATH = "/dyndns-manager/"
 # Dispatcher signals
 SIGNAL_DOMAINS_UPDATED = "dyndns_manager_domains_updated"
 SIGNAL_RESULTS_UPDATED = "dyndns_manager_results_updated"
+
+
+class DynDNSStatus(StrEnum):
+    """Canonical DynDNS status codes as enum (lowercase where applicable)."""
+    S_911 = "911"            # provider/server error
+    DONATOR = "!donator"
+    ABUSE = "abuse"
+    BADAGENT = "badagent"
+    BADAUTH = "badauth"
+    DNSERR = "dnserr"
+    ERROR = "error"
+    GOOD = "good"
+    NOCHG = "nochg"
+    NOTFQDN = "notfqdn"      # NOTE: use 'notfqdn' (not 'nofqdn')
+    NOHOST = "nohost"
+    NUMHOST = "numhost"
+    OK = "ok"
+    TIMEOUT = "timeout"
+    UNKNOWN = "unknown"
+
+
+# Enum options exported for entities (alphabetical for UI)
+DYNDNS_STATE_OPTIONS: list[str] = sorted([s.value for s in DynDNSStatus])
