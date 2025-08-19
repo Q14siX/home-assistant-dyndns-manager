@@ -117,7 +117,13 @@
           "notfqdn": "Keine FQDN",
           "numhost": "Zu viele Hosts",
           "abuse": "Missbrauch gemeldet",
-          "911": "Provider-Fehler"
+          "911": "Provider-Fehler",
+          "!donator": "Feature gesperrt",
+          "badagent": "Ungültiger Client",
+          "dnserr": "DNS-Fehler",
+          "error": "Serverfehler",
+          "ok": "Update erfolgreich",
+          "timeout": "Zeitüberschreitung"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "Keine FQDN",
               "numhost": "Zu viele Hosts",
               "abuse": "Missbrauch gemeldet",
-              "911": "Provider-Fehler"
+              "911": "Provider-Fehler",
+              "!donator": "Feature gesperrt",
+              "badagent": "Ungültiger Client",
+              "dnserr": "DNS-Fehler",
+              "error": "Serverfehler",
+              "ok": "Update erfolgreich",
+              "timeout": "Zeitüberschreitung"
             }
           }
         }
