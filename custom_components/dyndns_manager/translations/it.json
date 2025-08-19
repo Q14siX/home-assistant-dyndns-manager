@@ -117,7 +117,13 @@
           "notfqdn": "Non è un FQDN",
           "numhost": "Troppi host",
           "abuse": "Abuso segnalato",
-          "911": "Errore del provider"
+          "911": "Errore del provider",
+          "!donator": "Funzione bloccata",
+          "badagent": "Client non valido",
+          "dnserr": "Errore DNS",
+          "error": "Errore server",
+          "ok": "Aggiornamento riuscito",
+          "timeout": "Timeout"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "Non è un FQDN",
               "numhost": "Troppi host",
               "abuse": "Abuso segnalato",
-              "911": "Errore del provider"
+              "911": "Errore del provider",
+              "!donator": "Funzione bloccata",
+              "badagent": "Client non valido",
+              "dnserr": "Errore DNS",
+              "error": "Errore server",
+              "ok": "Aggiornamento riuscito",
+              "timeout": "Timeout"
             }
           }
         }
