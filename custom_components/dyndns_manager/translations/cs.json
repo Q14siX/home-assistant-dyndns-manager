@@ -117,7 +117,13 @@
           "notfqdn": "Není FQDN",
           "numhost": "Příliš mnoho hostitelů",
           "abuse": "Zneužití nahlášeno",
-          "911": "Chyba poskytovatele"
+          "911": "Chyba poskytovatele",
+          "!donator": "Funkce blokována",
+          "badagent": "Neplatný klient",
+          "dnserr": "Chyba DNS",
+          "error": "Chyba serveru",
+          "ok": "Aktualizace úspěšná",
+          "timeout": "Čas vypršel"
         },
         "state_attributes": {
           "ipv4": {
@@ -153,7 +159,13 @@
               "notfqdn": "Není FQDN",
               "numhost": "Příliš mnoho hostitelů",
               "abuse": "Zneužití nahlášeno",
-              "911": "Chyba poskytovatele"
+              "911": "Chyba poskytovatele",
+              "!donator": "Funkce blokována",
+              "badagent": "Neplatný klient",
+              "dnserr": "Chyba DNS",
+              "error": "Chyba serveru",
+              "ok": "Aktualizace úspěšná",
+              "timeout": "Čas vypršel"
             }
           }
         }
