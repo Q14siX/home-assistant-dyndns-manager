@@ -36,7 +36,28 @@
 - 🇹🇷 **Türkçe (tr)**: Bu projedeki tüm önemli değişiklikler burada belgelenmektedir. Değişiklik günlüğü yalnızca Almanca ve İngilizce olarak mevcuttur.  
 
 ---
+
 <details open>
+  <summary>📦 Update v20250819.2315</summary>
+
+### 🇩🇪 Fehlerbehebungen
+- `SensorDeviceClass.ENUM` eingeführt; Zustände erscheinen jetzt im Automations-Editor als Dropdown in **„Von“**/**„Zu“**.
+- Einheitliche, alphabetisch sortierte `options` inkl. Korrektur `notfqdn` (statt `nofqdn`) und Mapping besonderer Werte (`911`, `!donator`).
+- Vollständige State-Labels für alle 15 Zustände unter `entity.sensor.domain_status.state.*`; `translation_key = "domain_status"`.
+- Alle Sprachdateien angepasst und ergänzt.
+
+
+### 🇬🇧 Bug Fixes
+- **Sensor switched to Enum:** Adopted `SensorDeviceClass.ENUM`; entity states now appear as dropdown options for **“From”**/**“To”** in the automation editor.
+- **State list & normalization:** Unified, alphabetically sorted `options` incl. fix to `notfqdn` (instead of `nofqdn`) and handling of special values (`911`, `!donator`).
+- **Translations:** Complete state labels for all 15 states under `entity.sensor.domain_status.state.*`; `translation_key = "domain_status"`.
+- **Language files:** All language files updated and extended.
+
+</details>
+
+---
+
+<details>
   <summary>📦 Update v20250818.1800</summary>
 
 ### 🇩🇪 Fehlerbehebungen
